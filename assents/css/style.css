@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+}
+#contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #92b2a7;
+    box-shadow: 0 4px 8px rgba(146, 178, 167, 0.3);
+    margin-top: 30px;
+    }
+h1{
+    font-family: sans-serif;
+    color: #6e7b8c;
+    font-size: xx-large;
+}
+#agregarTarea{
+    width: 90%;
+    margin: 20px;
+    gap: 30px;
+}
+
+#agregarNuevaTarea{
+    width: 70%;
+    background-color:#e7c7b0 ;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(239, 160, 155, 0.4);
+    font-size: 30px;
+    margin-right: 50px;
+    border-top: 3px solid #efa09b;
+    outline: none;
+    text-align: center;
+}
+input::placeholder{
+    font-family: sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: #6e7b8c;
+}
+input:hover{
+scale: 0.99;
+}
+#AgregarTareaBoton{
+    background-color: #efa09b;
+    height: 35px;
+    width: 100px;
+    border-radius: 10%;
+    border: none;
+    box-shadow: 0 3px 10px rgba(239, 160, 155, 0.4);
+    color: #6e7b8c;
+    font-family: sans-serif;
+    font-size: 15px;
+    text-align: center;
+    pointer-events: auto;
+    transition: background-color 0.3s ease;
+    
+}
+#AgregarTareaBoton:hover {
+    background-color: #d6c0be;
+}
+#resumen{
+    width: 90%;
+    height: auto;
+    margin: 20px ;
+    display: flex;
+}
+#recuentoDeTareas{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns:1fr;
+    gap: 20px;
+    width: 100%;
+}
+#caja1 {
+    grid-column: span 2;
+    background-color: #92b2a736;
+    padding: 20px;
+    color: #6e7b8c;
+    font-family: sans-serif;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 5px;
+    border-top: 3px solid #92b2a7;
+}
+
+#agregarEliminarTareas {   
+    background-color: #b6919863;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+    outline: none;
+}
+#caja2{
+    display: flex;
+}
+#caja2 h3{
+    width: 50%;
+}
+
+
+#listaDeTareas {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+#listaDeTareas li {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd; }
+
+#accion {
+    font-size: 18px; 
+    color: #6e7b8c;
+    flex: 1; 
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.bi-check2-circle {
+    font-size: 24px; 
+    color: #6e7b8c; 
+    transition: color 0.3s ease; 
+}
+.bi-x-circle {
+    font-size: 28px; 
+    color: #e74c3c; 
+}
